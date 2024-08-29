@@ -28,6 +28,7 @@ function Button({ children, onClick }) {
     </button>
   );
 }
+
 export default function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [showAddFriend, setShowAddFriend] = useState(false);
@@ -36,6 +37,7 @@ export default function App() {
   function handleShowAddFriend() {
     setShowAddFriend((show) => !show);
   }
+
   function handleAddFriend(friend) {
     setFriends((friends) => [...friends, friend]);
     setShowAddFriend(false);
